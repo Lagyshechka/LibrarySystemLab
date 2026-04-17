@@ -1,0 +1,18 @@
+#JetBrains Rider
+
+.idea/
+*.sln.iml
+
+#Build results
+
+[Bb]in/
+[Oo]bj/
+
+#Visual Studio
+
+.vs/
+*.user
+
+#Test results
+
+TestResults/
