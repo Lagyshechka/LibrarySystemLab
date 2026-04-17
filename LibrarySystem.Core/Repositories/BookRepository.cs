@@ -2,7 +2,7 @@
 
 namespace LibrarySystem.Core.Repositories;
 
-public class BookRepository
+public class BookRepository : IBookRepository
 {
     private readonly List<Book> _books = new();
     private int _nextId = 1;

@@ -2,7 +2,7 @@
 
 namespace LibrarySystem.Core.Repositories;
 
-public class UserRepository
+public class UserRepository : IUserRepository
 {
     private readonly List<User> _users = new();
     private int _nextId = 1;
