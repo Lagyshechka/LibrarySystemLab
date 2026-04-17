@@ -20,15 +20,9 @@
 
 Проєкт організовано за класичним шаблоном Controller-Service-Repository, що забезпечує чітке розділення відповідальності (Separation of Concerns).
 
-LibrarySystem/
---- LibrarySystem.Core/
------- Controllers/   # Точка входу (LibraryController). Приймає запити і викликає сервіси.
------- Services/      # Бізнес-логіка (LibraryService). Реалізує всі перевірки та сценарії.
------- Repositories/  # Доступ до даних (BookRepository, UserRepository). Лише CRUD операції.
------- Models/        # Сутності бази даних (Book, User).
------- DTO/           # Об'єкти передачі даних (BookDto).
---- LibrarySystem.Tests/
------- LibraryServiceTests.cs # Юніт-тести з використанням Moq та xUnit.
+<img width="384" height="621" alt="image" src="https://github.com/user-attachments/assets/9ce41be9-d5c7-41ad-a017-9307536a7e4e" />
+
+
 <img width="1330" height="928" alt="Type Dependencies Diagram for Book and other elements" src="https://github.com/user-attachments/assets/43ae9723-b76d-4a21-8fc3-83df243f7faa" />
 
 Ця багатошарова структура дозволяє легко замінити in-memory репозиторії на реальну базу даних (наприклад, SQL Server або PostgreSQL) без жодних змін у бізнес-логіці (LibraryService).
